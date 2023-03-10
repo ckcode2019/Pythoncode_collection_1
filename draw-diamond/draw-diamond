@@ -1,0 +1,25 @@
+
+# Name: Charith Kumarasinghe
+# Discode id: CHKUMARASINGH#1583
+
+# programing task --
+
+# Write a program that reads a number from the standard input, then draws a
+# diamond like this:
+#
+#
+#    *
+#   ***
+#  *****
+# *******
+#  *****
+#   ***
+#    *
+#
+# The diamond should have as many lines as the number was
+diamond_base = int(input("Enter value to create the diamond: "))
+print("\n\n\n")
+for i in range(0, diamond_base):
+  print(" " * (diamond_base-i)+ "*" * i + "*" + "*" * i +" " * (diamond_base -i))
+for j in range(0, diamond_base + 1):
+  print(" " * j + "*" * (diamond_base-j) + "*" + "*" * (diamond_base-j) +" " * i)
